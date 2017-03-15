@@ -11,7 +11,8 @@ func main() {
 	fmt.Println(a)
 	fmt.Println(&a)
 
-	var b = &a
+	var b *int
+	b = &a
 
 	fmt.Println(b)
 
