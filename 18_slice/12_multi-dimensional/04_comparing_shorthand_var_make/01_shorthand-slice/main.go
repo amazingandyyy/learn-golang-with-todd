@@ -7,7 +7,7 @@ import (
 func main() {
 	student := []string{}
 	students := [][]string{}
-	student[0] = "Todd"
+	student[0] = "Todd" //error
 	// student = append(student, "Todd")
 	fmt.Println(student)
 	fmt.Println(students)

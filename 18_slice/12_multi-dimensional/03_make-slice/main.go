@@ -9,5 +9,5 @@ func main() {
 	students := make([][]string, 35)
 	fmt.Println(student)
 	fmt.Println(students)
-	fmt.Println(student == nil)
+	fmt.Println(student == nil) // false
 }
