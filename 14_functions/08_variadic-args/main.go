@@ -4,6 +4,7 @@ import "fmt"
 
 func main() {
 	data := []float64{43, 56, 87, 12, 45, 57}
+	fmt.Println(data)
 	n := average(data...)
 	fmt.Println(n)
 }

@@ -2,14 +2,14 @@ package main
 
 import "fmt"
 
-func filter(numbers []int, callback func(int) bool) []int {
-	var xs []int
+func filter(numbers []int, callback func(int) bool) (xs []int) {
 	for _, n := range numbers {
 		if callback(n) {
 			xs = append(xs, n)
 		}
 	}
-	return xs
+	fmt.Printf("%T \n", callback)
+	return
 }
 
 func main() {

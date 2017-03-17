@@ -3,7 +3,6 @@ package main
 import "fmt"
 
 func main() {
-
 	name := "Todd"
 	fmt.Println(&name) // 0x82023c080
 
