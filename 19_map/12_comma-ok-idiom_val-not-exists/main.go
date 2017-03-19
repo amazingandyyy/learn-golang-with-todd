@@ -13,14 +13,14 @@ func main() {
 
 	fmt.Println(myGreeting)
 
-	if val, exists := myGreeting[7]; exists {
+	if val, ok := myGreeting[7]; ok {
 		delete(myGreeting, 7)
 		fmt.Println("val: ", val)
-		fmt.Println("exists: ", exists)
+		fmt.Println("ok: ", ok)
 	} else {
 		fmt.Println("That value doesn't exist.")
 		fmt.Println("val: ", val)
-		fmt.Println("exists: ", exists)
+		fmt.Println("ok: ", ok)
 	}
 
 	fmt.Println(myGreeting)

@@ -20,6 +20,8 @@ func main() {
 	bs := []byte(`{"First":"James", "Last":"Bond", "Age":20}`)
 	json.Unmarshal(bs, &p1)
 
+	// Unmarshal takes []byte and convert it into an interface of the second params
+
 	fmt.Println("--------------")
 	fmt.Println(p1.First)
 	fmt.Println(p1.Last)

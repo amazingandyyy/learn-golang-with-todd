@@ -13,6 +13,7 @@ type person struct {
 
 func main() {
 	p1 := person{"James", "Bond", 20}
+	fmt.Println(p1)
 	bs, _ := json.Marshal(p1)
 	fmt.Println(string(bs))
 }
