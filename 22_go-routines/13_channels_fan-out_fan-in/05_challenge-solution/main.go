@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"time"
 	"sync/atomic"
+	"time"
 )
 
 var workerID int64
