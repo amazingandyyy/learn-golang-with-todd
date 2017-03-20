@@ -45,8 +45,8 @@ func workerProcess(in <-chan string) {
 
 /*
 CHALLENGE #1
-Is this fan out?
+Is this fan out? Y
 
 CHALLENGE #2
-Is this fan in?
+Is this fan in? N
 */

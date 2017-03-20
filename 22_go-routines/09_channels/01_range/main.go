@@ -15,6 +15,8 @@ func main() {
 	}()
 
 	for n := range c {
-		fmt.Println(n)
+		fmt.Println("n", n)
+		// fmt.Println(<-c)
+		// fmt.Println("---")
 	}
 }

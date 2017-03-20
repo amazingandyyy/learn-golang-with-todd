@@ -15,6 +15,8 @@ func main() {
 
 	for {
 		fmt.Println(<-c)
+		// hanging there waiting for the one after 9
+		// but doesn't receive any after 9
 	}
 }
 

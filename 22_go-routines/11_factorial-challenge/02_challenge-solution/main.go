@@ -5,16 +5,16 @@ import (
 )
 
 func main() {
-	c := factorial(4)
+	c := factorial(60)
 	for n := range c {
 		fmt.Println(n)
 	}
 }
 
-func factorial(n int) chan int {
-	out := make(chan int)
+func factorial(n uint64) chan uint64 {
+	out := make(chan uint64)
 	go func() {
-		total := 1
+		var total uint64 = 1
 		for i := n; i > 0; i-- {
 			total *= i
 		}

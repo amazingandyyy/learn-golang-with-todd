@@ -7,7 +7,8 @@ import (
 func main() {
 	c := make(chan int)
 	c <- 1
-	fmt.Println(<-c)
+	// no one is sycly waiting to recieve the last one
+	fmt.Println(<-c) // we need to run this go when we asign 1 to the c channel
 }
 
 // This results in a deadlock.

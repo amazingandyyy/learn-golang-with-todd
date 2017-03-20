@@ -5,12 +5,12 @@ import (
 )
 
 func main() {
-	f := factorial(4)
+	f := factorial(60)
 	fmt.Println("Total:", f)
 }
 
-func factorial(n int) int {
-	total := 1
+func factorial(n uint64) uint64 {
+	var total uint64 = 1
 	for i := n; i > 0; i-- {
 		total *= i
 	}
