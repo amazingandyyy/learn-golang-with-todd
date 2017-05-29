@@ -10,5 +10,7 @@ func main() {
 		y := "The credit belongs with the one who is in the ring."
 		fmt.Println(y)
 	}
-	// fmt.Println(y) // outside scope of y
+	// outside scope of y
+	// this does not compile
+	// fmt.Println(y)
 }
